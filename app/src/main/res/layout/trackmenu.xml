@@ -1,0 +1,122 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/track_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track Vehicle"
+        android:gravity="center|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:textColor="#fafafa"
+        android:drawableLeft="@mipmap/vehicle_tracker"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:drawableRight="@drawable/back"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/my_vehicles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Vehicles"
+        android:gravity="center|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@mipmap/my_vehicles"
+        android:textColor="#fafafa"
+        android:layout_below="@+id/track_vehicle"
+        android:drawableRight="@drawable/back"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:gravity="center|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@mipmap/history"
+        android:textColor="#fafafa"
+        android:layout_below="@+id/my_vehicles"
+        android:drawableRight="@drawable/back"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share This App"
+        android:gravity="center|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:textColor="#fafafa"
+        android:drawableLeft="@mipmap/share"
+        android:layout_below="@+id/history"
+        android:drawableRight="@drawable/back"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+
+
+    <Button
+        android:id="@+id/rateus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate Us"
+        android:drawableLeft="@mipmap/rate"
+        android:gravity="center|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:textColor="#fafafa"
+        android:layout_below="@+id/share"
+        android:drawableRight="@drawable/back"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+
+
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

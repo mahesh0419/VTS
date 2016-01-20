@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+
+        android:layout_above="@+id/inputname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp" />
+
+
+
+    <EditText
+        android:id="@+id/inputname"
+
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:background="@drawable/edit"/>
+
+    <EditText
+        android:id="@+id/inputemail"
+
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+       android:layout_below="@+id/inputname"
+        android:inputType="text"
+        android:background="@drawable/edit"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center|center_horizontal"
+        android:layout_marginTop="13dp"
+        android:background="#3fa9f5"
+        android:textColor="#fafafa"
+        android:layout_below="@+id/inputemail"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
